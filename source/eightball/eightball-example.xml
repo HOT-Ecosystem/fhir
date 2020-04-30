@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../publish/eightball.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<EightBall xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/eightball.xsd">
+	<id value="example"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">Answer for will we ever be free</div>
+	</text>
+	<question value="Will we ever be freee"/>
+	<answer>
+		<value value="P1"/>
+	</answer>
+</EightBall>
