@@ -340,6 +340,9 @@
 		<translation lang="es">RecursoDeDominio</translation>
 		<translation lang="zh">领域资源</translation>
 	</item>
+	<item id="EightBall">
+		<translation lang="en">EightBall</translation>
+	</item>
 	<item id="Encounter">
 		<translation lang="en">Encounter</translation>
 		<translation lang="zh">就医过程</translation>
