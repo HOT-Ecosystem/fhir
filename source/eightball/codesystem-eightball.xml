@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="4"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2020-04-27T21:45:21.755+00:00"/>
+      <source value="#Ufx49G8merV862Oe"/>
+   </meta>
+   <url value="http://example.org/magic8ball"/>
+   <name value="magic8ball"/>
+   <title value="Magic 8 Ball Fortune Codes"/>
+   <status value="active"/>
+   <publisher value="Harold Solbrig"/>
+   <contact>
+      <name value="Harold Solbrig"/>
+   </contact>
+   <description value="Codes for the 20 possible answers to the standard Magic 8 Ball"/>
+   <purpose value="This is a sample code system used to demonstrate how to attach value sets to FHIR"/>
+   <caseSensitive value="true"/>
+   <hierarchyMeaning value="classified-with"/>
+   <compositional value="false"/>
+   <versionNeeded value="false"/>
+   <content value="complete"/>
+   <count value="23"/>
+   <concept>
+      <code value="Y"/>
+      <display value="Affirmative response"/>
+      <concept>
+         <code value="P1"/>
+         <display value="It is certain"/>
+      </concept>
+      <concept>
+         <code value="P2"/>
+         <display value="It is decidedly so"/>
+      </concept>
+      <concept>
+         <code value="P3"/>
+         <display value="Without a doubt"/>
+      </concept>
+      <concept>
+         <code value="P4"/>
+         <display value="Yes - definitely"/>
+      </concept>
+      <concept>
+         <code value="P5"/>
+         <display value="You may rely on it"/>
+      </concept>
+      <concept>
+         <code value="P6"/>
+         <display value="As I see it, yes"/>
+      </concept>
+      <concept>
+         <code value="P7"/>
+         <display value="Most Likely"/>
+      </concept>
+      <concept>
+         <code value="P8"/>
+         <display value="Outlook good"/>
+      </concept>
+      <concept>
+         <code value="P9"/>
+         <display value="Yes"/>
+      </concept>
+      <concept>
+         <code value="P10"/>
+         <display value="Signs point to yes"/>
+      </concept>
+   </concept>
+   <concept>
+      <code value="N"/>
+      <display value="Negative response"/>
+      <concept>
+         <code value="N1"/>
+         <display value="Don't count on it"/>
+      </concept>
+      <concept>
+         <code value="N2"/>
+         <display value="My reply is no"/>
+      </concept>
+      <concept>
+         <code value="N3"/>
+         <display value="My sources say no"/>
+      </concept>
+      <concept>
+         <code value="N4"/>
+         <display value="Outlook not so good"/>
+      </concept>
+      <concept>
+         <code value="N5"/>
+         <display value="Very doubtful"/>
+      </concept>
+   </concept>
+   <concept>
+      <code value="U"/>
+      <display value="Uncertain response"/>
+      <concept>
+         <code value="U1"/>
+         <display value="Reply hazy, try again"/>
+      </concept>
+      <concept>
+         <code value="U2"/>
+         <display value="Ask again later"/>
+      </concept>
+      <concept>
+         <code value="U3"/>
+         <display value="Better not tell you now"/>
+      </concept>
+      <concept>
+         <code value="U4"/>
+         <display value="Cannot predict now"/>
+      </concept>
+      <concept>
+         <code value="U5"/>
+         <display value="Concentrate and ask again"/>
+      </concept>
+   </concept>
+</CodeSystem>

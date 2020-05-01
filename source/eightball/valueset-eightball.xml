@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="5"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2020-04-28T14:52:53.932+00:00"/>
+      <source value="#25oNdPb2eYYhFupU"/>
+   </meta>
+   <url value="http://example.org/magic8ball"/>
+   <name value="magic8ball"/>
+   <title value="Magic 8 Ball Fortune Codes"/>
+   <status value="active"/>
+   <publisher value="Harold Solbrig"/>
+   <contact>
+      <name value="Harold Solbrig"/>
+   </contact>
+   <description value="Codes for the 20 possible answers to the standard Magic 8 Ball"/>
+   <purpose value="This is a sample code system used to demonstrate how to attach value sets to FHIR"/>
+   <compose>
+      <include>
+         <system value="http://example.org/magic8ball"/>
+      </include>
+   </compose>
+   <expansion>
+      <identifier value="http://example.org/magic8ball/expansion"/>
+      <timestamp value="2020-04-28T14:44:25.075+00:00"/>
+      <total value="23"/>
+      <contains>
+         <system value="http://example.org/magic8ball"/>
+         <abstract value="true"/>
+         <code value="Y"/>
+         <display value="Affirmative response"/>
+         <contains>
+            <code value="P1"/>
+            <display value="It is certain"/>
+         </contains>
+         <contains>
+            <code value="P2"/>
+            <display value="It is decidedly so"/>
+         </contains>
+         <contains>
+            <code value="P3"/>
+            <display value="Without a doubt"/>
+         </contains>
+         <contains>
+            <code value="P4"/>
+            <display value="Yes - definitely"/>
+         </contains>
+         <contains>
+            <code value="P5"/>
+            <display value="You may rely on it"/>
+         </contains>
+         <contains>
+            <code value="P6"/>
+            <display value="As I see it, yes"/>
+         </contains>
+         <contains>
+            <code value="P7"/>
+            <display value="Most Likely"/>
+         </contains>
+         <contains>
+            <code value="P8"/>
+            <display value="Outlook good"/>
+         </contains>
+         <contains>
+            <code value="P9"/>
+            <display value="Yes"/>
+         </contains>
+         <contains>
+            <code value="P10"/>
+            <display value="Signs point to yes"/>
+         </contains>
+      </contains>
+      <contains>
+         <system value="http://example.org/magic8ball"/>
+         <abstract value="true"/>
+         <code value="N"/>
+         <display value="Negative response"/>
+         <contains>
+            <code value="N1"/>
+            <display value="Don't count on it"/>
+         </contains>
+         <contains>
+            <code value="N2"/>
+            <display value="My reply is no"/>
+         </contains>
+         <contains>
+            <code value="N3"/>
+            <display value="My sources say no"/>
+         </contains>
+         <contains>
+            <code value="N4"/>
+            <display value="Outlook not so good"/>
+         </contains>
+         <contains>
+            <code value="N5"/>
+            <display value="Very doubtful"/>
+         </contains>
+      </contains>
+      <contains>
+         <system value="http://example.org/magic8ball"/>
+         <abstract value="true"/>
+         <code value="U"/>
+         <display value="Uncertain response"/>
+         <contains>
+            <code value="U1"/>
+            <display value="Reply hazy, try again"/>
+         </contains>
+         <contains>
+            <code value="U2"/>
+            <display value="Ask again later"/>
+         </contains>
+         <contains>
+            <code value="U3"/>
+            <display value="Better not tell you now"/>
+         </contains>
+         <contains>
+            <code value="U4"/>
+            <display value="Cannot predict now"/>
+         </contains>
+         <contains>
+            <code value="U5"/>
+            <display value="Concentrate and ask again"/>
+         </contains>
+      </contains>
+   </expansion>
+</ValueSet>
