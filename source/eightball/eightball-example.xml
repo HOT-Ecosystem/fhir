@@ -7,7 +7,5 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">Answer for will we ever be free</div>
 	</text>
 	<question value="Will we ever be freee"/>
-	<answer>
-		<value value="P1"/>
-	</answer>
+	<answer value="P1"/>
 </EightBall>
