@@ -1193,7 +1193,8 @@ public class ResourceValidator extends BaseValidator {
         
       if (sd.contains("|")) {
         if (b.length() < 3)
-          throw new Error("surprise");
+	{ System.out.println("----> " + sd);
+	  throw new Error("surprise"); }
         String esd = b.substring(3);
         rule(errors, IssueType.STRUCTURE, path, sd.startsWith(esd) || (sd.endsWith("+") && b.substring(3).startsWith(sd.substring(0, sd.length()-1)) ), "The short description \""+sd+"\" does not match the expected (\""+b.substring(3)+"\")");
       } else {
