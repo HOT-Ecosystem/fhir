@@ -32,7 +32,7 @@ signatures.html
         <page title="ANSI FHIR Terminology &amp; Conformance Standard" filename="ansi-conformance.html"/>
         <page title="ANSI FHIR Patient Standard" filename="ansi-patient.html"/>
         <page title="ANSI FHIR Observation Standard" filename="ansi-observation.html"/>
-      
+
       </page>
       <page title="CI Build Search" filename="search-build.html"/>
 <!--      <page title="Ballot Introduction" filename="ballot-intro.html"/> -->
@@ -328,6 +328,7 @@ signatures.html
       <page type="resource" resource="BodyStructure"/>
       <page title="Genomics Implementer Guidance" filename="genomics.html"/>
       <page type="resource" resource="BiologicallyDerivedProduct"/>
+      <page type="resource" resource="ADMsample"/>
     </page>
 
     <page title="Medications" filename="medications-module.html" icon="medication.png">
