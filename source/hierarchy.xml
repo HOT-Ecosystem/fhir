@@ -330,6 +330,7 @@ signatures.html
       <page type="resource" resource="BiologicallyDerivedProduct"/>
       <page type="resource" resource="Sample"/>
       <page type="resource" resource="Case"/>
+      <page type="resource" resource="Portion"/>
     </page>
 
     <page title="Medications" filename="medications-module.html" icon="medication.png">

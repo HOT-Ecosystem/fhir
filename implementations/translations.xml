@@ -791,6 +791,9 @@
 		<translation lang="es">DefinicionDePlan</translation>
 		<translation lang="zh">计划定义</translation>
 	</item>
+	<item id="Portion">
+		<translation lang="en">Portion</translation>
+	</item>
 	<item id="Practitioner">
 		<translation lang="en">Practitioner</translation>
 		<translation lang="zh">执业人员</translation>
