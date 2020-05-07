@@ -48,9 +48,6 @@
 		<translation lang="en">ActivityGroup</translation>
 		<translation lang="it">GruppoAttivita</translation>
 	</item>
-	<item id="ADMsample">
-		<translation lang="en">ADMsample</translation>
-	</item>
 	<item id="AdverseEvent">
 		<translation lang="en">AdverseEvent</translation>
 		<translation lang="es">EventoAdverso</translation>
@@ -896,6 +893,9 @@
 		<translation lang="fr">ÉvaluationRisques</translation>
 		<translation lang="es">EvaluacionDeRiesgo</translation>
 		<translation lang="zh">风险评估</translation>
+	</item>
+	<item id="Sample">
+		<translation lang="en">Sample</translation>
 	</item>
 	<item id="Schedule">
 		<translation lang="en">Schedule</translation>

@@ -328,7 +328,7 @@ signatures.html
       <page type="resource" resource="BodyStructure"/>
       <page title="Genomics Implementer Guidance" filename="genomics.html"/>
       <page type="resource" resource="BiologicallyDerivedProduct"/>
-      <page type="resource" resource="ADMsample"/>
+      <page type="resource" resource="Sample"/>
       <page type="resource" resource="Case"/>
     </page>
 
