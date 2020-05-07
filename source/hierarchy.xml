@@ -329,6 +329,7 @@ signatures.html
       <page title="Genomics Implementer Guidance" filename="genomics.html"/>
       <page type="resource" resource="BiologicallyDerivedProduct"/>
       <page type="resource" resource="ADMsample"/>
+      <page type="resource" resource="Case"/>
     </page>
 
     <page title="Medications" filename="medications-module.html" icon="medication.png">

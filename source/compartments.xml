@@ -120,7 +120,7 @@
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="resources">
-  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="152" ss:StyleID="s65" x:FullColumns="1" x:FullRows="1">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="153" ss:StyleID="s65" x:FullColumns="1" x:FullRows="1">
    <Column ss:AutoFitWidth="0" ss:StyleID="s65" ss:Width="158.0"/>
    <Column ss:AutoFitWidth="0" ss:StyleID="s65" ss:Width="198.0"/>
    <Column ss:AutoFitWidth="0" ss:StyleID="s65" ss:Width="98.0"/>
@@ -205,6 +205,10 @@
     <Cell><Data ss:Type="String"/></Cell>
     <Cell><Data ss:Type="String">participant </Data></Cell>
     <Cell><Data ss:Type="String">participant </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Case</Data></Cell>
+    <Cell ss:StyleID="s67"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">ChargeItem</Data></Cell>
@@ -769,10 +773,10 @@
    <Row>
     <Cell><Data ss:Type="String">ChargeItemDefinition</Data></Cell>
    </Row>
-   <Row ss:Index="144">
+   <Row ss:Index="145">
     <Cell><Data ss:Type="String">EvidenceVariable</Data></Cell>
    </Row>
-   <Row ss:Index="147">
+   <Row ss:Index="148">
     <Cell><Data ss:Type="String">ConditionDefinition</Data></Cell>
    </Row>
    <Row>
@@ -807,7 +811,7 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>1</TopRowBottomPane>
+   <TopRowBottomPane>4</TopRowBottomPane>
    <ActivePane>2</ActivePane>
    
    <ProtectObjects>False</ProtectObjects>

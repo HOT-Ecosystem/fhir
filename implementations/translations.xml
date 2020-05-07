@@ -149,6 +149,9 @@
 		<translation lang="es">EquipoDeCuidado</translation>
 		<translation lang="zh">照护团队</translation>
 	</item>
+	<item id="Case">
+		<translation lang="en">Case</translation>
+	</item>
 	<item id="Catalog">
 		<translation lang="en">Catalog</translation>
 		<translation lang="it">Catalogo</translation>
