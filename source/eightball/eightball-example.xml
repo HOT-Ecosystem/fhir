@@ -6,6 +6,11 @@
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">Answer for will we ever be free</div>
 	</text>
-	<question value="Will we ever be freee"/>
-	<answer value="P1"/>
+	<question value="Will we ever be free"/>
+        <answer>
+           <coding>
+             <system value="http://example.org/magic8ball"/>
+             <code value="P1"/>
+           </coding>
+        </answer>
 </EightBall>

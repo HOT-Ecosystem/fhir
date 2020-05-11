@@ -17,11 +17,11 @@
    </contact>
    <description value="Codes for the 20 possible answers to the standard Magic 8 Ball"/>
    <purpose value="This is a sample code system used to demonstrate how to attach value sets to FHIR"/>
-   <compose>
+   <!--compose>
       <include>
          <system value="http://example.org/magic8ball"/>
       </include>
-   </compose>
+   </compose-->
    <expansion>
       <identifier value="http://example.org/magic8ball/expansion"/>
       <timestamp value="2020-04-28T14:44:25.075+00:00"/>
@@ -32,6 +32,7 @@
          <code value="Y"/>
          <display value="Affirmative response"/>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P1"/>
             <display value="It is certain"/>
          </contains>
