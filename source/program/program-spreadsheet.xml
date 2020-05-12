@@ -3,7 +3,7 @@
   <Author>Andrew Massoud</Author>
   <LastAuthor>Andrew Massoud</LastAuthor>
   <Created>2020-05-07T15:40:53Z</Created>
-  <LastSaved>2020-05-07T16:09:43Z</LastSaved>
+  <LastSaved>2020-05-11T21:27:22Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -15,7 +15,7 @@
   
   
   <TabRatio>734</TabRatio>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>7</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -133,10 +133,6 @@
   <Style ss:ID="s80">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
    <Interior ss:Color="#D9E1F2" ss:Pattern="Solid"/>
-  </Style>
-  <Style ss:ID="s81">
-   <Borders/>
-   <Interior/>
   </Style>
   <Style ss:ID="s82">
    <Interior/>
@@ -444,13 +440,14 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="Data Elements">
-  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="14" x:FullColumns="1" x:FullRows="1">
-   <Column ss:StyleID="s67" ss:Width="151.0"/>
+  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="13" x:FullColumns="1" x:FullRows="1">
+   <Column ss:StyleID="s67" ss:Width="159.0"/>
    <Column ss:Index="5" ss:Width="83.0"/>
    <Column ss:Index="9" ss:Width="75.0"/>
    <Column ss:Width="86.0"/>
@@ -487,78 +484,58 @@
     <Cell ss:StyleID="s77"><Data ss:Type="String">Hierarchy</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="43">
-    <Cell><Data ss:Type="String">Portion</Data></Cell>
+    <Cell><Data ss:Type="String">Program</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">DomainResource</Data></Cell>
     <Cell ss:Index="10"><Data ss:Type="String">clinical.diagnostics</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">A PropertySet defiend by GDC to hold generic properties that apply to many different entities</Data></Cell>
-    <Cell><Data ss:Type="String">A physical sub-part of any sample. </Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Any specifically defined piece of work that is undertaken or attempted to meet a single requirement. (NCIt C47885)</Data></Cell>
+    <Cell><Data ss:Type="String">Any specifically defined piece of work that is undertaken or attempted to meet a single requirement. (NCIt C47885)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:StyleID="s79">
-    <Cell ss:StyleID="s78"><Data ss:Type="String">Portion.identifier</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Program.identifier</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">Identifier</Data></Cell>
     <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">A unique alphanumeric identifier</Data></Cell>
     <Cell ss:StyleID="s80"><Data ss:Type="String">A unique alphanumeric identifier</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="29" ss:StyleID="s79">
-    <Cell ss:StyleID="s78"><Data ss:Type="String">Portion.projectId</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Program.name</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">Identifier</Data></Cell>
-    <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">A unique key in combination with submitter_id</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">A unique key in combination with submitter_id</Data></Cell>
+    <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">KEY</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="29" ss:StyleID="s79">
-    <Cell ss:StyleID="s78"><Data ss:Type="String">Portion.submitterId</Data></Cell>
-    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Identifier</Data></Cell>
-    <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">A unique key in combination with project_id</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">A unique key in combination with project_id</Data></Cell>
+   <Row ss:AutoFitHeight="0" ss:Height="29">
+    <Cell><Data ss:Type="String">Program.dbgapAccessionNumber</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">1..*</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">The dbgap accession number provided for the program</Data></Cell>
+    <Cell><Data ss:Type="String">The dbgap accession number provided for the program.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="43">
-    <Cell><Data ss:Type="String">Portion.creationDatetime</Data></Cell>
-    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s81"><Data ss:Type="String">integer</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">The datetime of portion creation encoded as seconds from epoch</Data></Cell>
-    <Cell><Data ss:Type="String">The datetime of portion creation encoded as seconds from epoch.</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="58">
-    <Cell><Data ss:Type="String">Portion.derivedFrom</Data></Cell>
-    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">The sample from which the portion was derived</Data></Cell>
-    <Cell><Data ss:Type="String">The sample from which the portion was derived.</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="43">
-    <Cell><Data ss:Type="String">Portion.isFfpe</Data></Cell>
-    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">Indicator to signify whether or not the tissue sample was fixed in formalin and embedded in paraffin (FFPE)</Data></Cell>
-    <Cell><Data ss:Type="String">Indicator to signify whether or not the tissue sample was fixed in formalin and embedded in paraffin (FFPE).</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"/>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="86">
-    <Cell><Data ss:Type="String">Portion.number</Data></Cell>
-    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">Numeric value that represents the sequential number assigned to a portion of the sample</Data></Cell>
-    <Cell><Data ss:Type="String">Numeric value that represents the sequential number assigned to a portion of the sample.</Data></Cell>
+   <Row ss:AutoFitHeight="0" ss:Height="29">
+    <Cell ss:Index="5" ss:StyleID="s82"/>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="86">
-    <Cell><Data ss:Type="String">Portion.shippedTo</Data></Cell>
-    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">The center to which the portion is shipped</Data></Cell>
-    <Cell><Data ss:Type="String">The center to which the portion is shipped.</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="5" ss:StyleID="s82"/>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="58">
-    <Cell><Data ss:Type="String">Portion.weight</Data></Cell>
-    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">integer</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">Numeric value that represents the sample portion weight, measured in milligrams</Data></Cell>
-    <Cell><Data ss:Type="String">Numeric value that represents the sample portion weight, measured in milligrams.</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="5" ss:StyleID="s82"/>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="29"/>
-   <Row ss:AutoFitHeight="0" ss:Height="158"/>
-   <Row ss:AutoFitHeight="0" ss:Height="29"/>
+   <Row ss:AutoFitHeight="0" ss:Height="43">
+    <Cell ss:Index="5" ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29">
+    <Cell ss:Index="5" ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="5" ss:StyleID="s82"/>
+   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageSetup>
@@ -566,11 +543,11 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   <Selected/>
+   
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>6</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
    <LeftColumnRightPane>1</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -1045,6 +1022,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1247,6 +1225,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1630,6 +1609,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1753,6 +1733,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1937,6 +1918,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1961,9 +1943,9 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s114"><Data ss:Type="String">Example</Data></Cell>
     <Cell ss:StyleID="s98"/>
-    <Cell ss:StyleID="s115"><Data ss:Type="String">Placeholder example file for Portion resource</Data></Cell>
+    <Cell ss:StyleID="s115"><Data ss:Type="String">Placeholder example file for Program resource</Data></Cell>
     <Cell ss:StyleID="s98"><Data ss:Type="String">example</Data></Cell>
-    <Cell ss:StyleID="s98"><Data ss:Type="String">portion-example.xml</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">program-example.xml</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s116"><Data ss:Type="String">y</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2271,6 +2253,9 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
+   <Selected/>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -2447,6 +2432,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>

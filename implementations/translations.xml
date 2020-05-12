@@ -65,12 +65,18 @@
 		<translation lang="fr">RisqueEffetIndésirable</translation>
 		<translation lang="it">RischioDiReazioneAvversa</translation>
 	</item>
+	<item id="Aliquot">
+		<translation lang="en">Aliquot</translation>
+	</item>
 	<item id="AllergyIntolerance">
 		<translation lang="en">AllergyIntolerance</translation>
 		<translation lang="es">AllergiaIntolerancia</translation>
 		<translation lang="fr">IntoléranceAllergique</translation>
 		<translation lang="it">AllergiaIntolleranza</translation>
 		<translation lang="zh">变态反应与不耐性</translation>
+	</item>
+	<item id="Analyte">
+		<translation lang="en">Analyte</translation>
 	</item>
 	<item id="Appointment">
 		<translation lang="en">Appointment</translation>
@@ -827,6 +833,12 @@
 		<translation lang="zh">规范</translation>
 		<translation lang="fr">Profil</translation>
 		<translation lang="it">Profilo</translation>
+	</item>
+	<item id="Program">
+		<translation lang="en">Program</translation>
+	</item>
+	<item id="Project">
+		<translation lang="en">Project</translation>
 	</item>
 	<item id="Provenance">
 		<translation lang="en">Provenance</translation>

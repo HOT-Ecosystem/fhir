@@ -3,7 +3,7 @@
   <Author>Andrew Massoud</Author>
   <LastAuthor>Andrew Massoud</LastAuthor>
   <Created>2020-05-07T15:40:53Z</Created>
-  <LastSaved>2020-05-07T16:09:43Z</LastSaved>
+  <LastSaved>2020-05-11T21:27:22Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -444,6 +444,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -487,78 +488,98 @@
     <Cell ss:StyleID="s77"><Data ss:Type="String">Hierarchy</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="43">
-    <Cell><Data ss:Type="String">Portion</Data></Cell>
+    <Cell><Data ss:Type="String">Project</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">DomainResource</Data></Cell>
     <Cell ss:Index="10"><Data ss:Type="String">clinical.diagnostics</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">A PropertySet defiend by GDC to hold generic properties that apply to many different entities</Data></Cell>
-    <Cell><Data ss:Type="String">A physical sub-part of any sample. </Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Any specifically defined piece of work that is undertaken or attempted to meet a single requirement. (NCIt C47885)</Data></Cell>
+    <Cell><Data ss:Type="String">Any specifically defined piece of work that is undertaken or attempted to meet a single requirement. (NCIt C47885)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:StyleID="s79">
-    <Cell ss:StyleID="s78"><Data ss:Type="String">Portion.identifier</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Project.identifier</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">Identifier</Data></Cell>
     <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">A unique alphanumeric identifier</Data></Cell>
     <Cell ss:StyleID="s80"><Data ss:Type="String">A unique alphanumeric identifier</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="29" ss:StyleID="s79">
-    <Cell ss:StyleID="s78"><Data ss:Type="String">Portion.projectId</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Project.code</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">Identifier</Data></Cell>
-    <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">A unique key in combination with submitter_id</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">A unique key in combination with submitter_id</Data></Cell>
+    <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">KEY</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="29" ss:StyleID="s79">
-    <Cell ss:StyleID="s78"><Data ss:Type="String">Portion.submitterId</Data></Cell>
+   <Row ss:Height="29">
+    <Cell><Data ss:Type="String">Project.awgReview</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Identifier</Data></Cell>
-    <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">A unique key in combination with project_id</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">A unique key in combination with project_id</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s81"><Data ss:Type="String">boolean</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Indicates that the project is an AWG project</Data></Cell>
+    <Cell><Data ss:Type="String">Indicates that the project is an AWG project.</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell><Data ss:Type="String">Project.dbgapAccessionNumber</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">1..*</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">The dbgap accession number provided for the program</Data></Cell>
+    <Cell><Data ss:Type="String">The dbgap accession number provided for the program.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="43">
-    <Cell><Data ss:Type="String">Portion.creationDatetime</Data></Cell>
-    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s81"><Data ss:Type="String">integer</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">The datetime of portion creation encoded as seconds from epoch</Data></Cell>
-    <Cell><Data ss:Type="String">The datetime of portion creation encoded as seconds from epoch.</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="58">
-    <Cell><Data ss:Type="String">Portion.derivedFrom</Data></Cell>
+    <Cell><Data ss:Type="String">Project.diseaseType</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">The sample from which the portion was derived</Data></Cell>
-    <Cell><Data ss:Type="String">The sample from which the portion was derived.</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Full name for the project</Data></Cell>
+    <Cell><Data ss:Type="String">Full name for the project.</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="43">
-    <Cell><Data ss:Type="String">Portion.isFfpe</Data></Cell>
+   <Row ss:Height="43">
+    <Cell><Data ss:Type="String">Project.inReview</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">Indicator to signify whether or not the tissue sample was fixed in formalin and embedded in paraffin (FFPE)</Data></Cell>
-    <Cell><Data ss:Type="String">Indicator to signify whether or not the tissue sample was fixed in formalin and embedded in paraffin (FFPE).</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Indicates that the project is under review by the submitter. Upload and data modification is disabled</Data></Cell>
+    <Cell><Data ss:Type="String">Indicates that the project is under review by the submitter. Upload and data modification is disabled. </Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="86">
-    <Cell><Data ss:Type="String">Portion.number</Data></Cell>
+   <Row ss:Height="29">
+    <Cell><Data ss:Type="String">Project.isLegacy</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Indicates whether a project will appear in the Legacy Archive</Data></Cell>
+    <Cell><Data ss:Type="String">Indicates whether a project will appear in the Legacy Archive. </Data></Cell>
+   </Row>
+   <Row ss:Height="14">
+    <Cell><Data ss:Type="String">Project.name</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">1..1</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Display name for the project</Data></Cell>
+    <Cell><Data ss:Type="String">Display name for the project.</Data></Cell>
+   </Row>
+   <Row ss:Height="14">
+    <Cell><Data ss:Type="String">Project.primarySite</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">Numeric value that represents the sequential number assigned to a portion of the sample</Data></Cell>
-    <Cell><Data ss:Type="String">Numeric value that represents the sequential number assigned to a portion of the sample.</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Primary site for the project</Data></Cell>
+    <Cell><Data ss:Type="String">Primary site for the project.</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="86">
-    <Cell><Data ss:Type="String">Portion.shippedTo</Data></Cell>
+   <Row ss:Height="43">
+    <Cell><Data ss:Type="String">Project.releaseRequested</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">The center to which the portion is shipped</Data></Cell>
-    <Cell><Data ss:Type="String">The center to which the portion is shipped.</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">User requests that the GDC release the project. Release can only be requested if the project is releasable</Data></Cell>
+    <Cell><Data ss:Type="String">User requests that the GDC release the project. Release can only be requested if the project is releasable.</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="58">
-    <Cell><Data ss:Type="String">Portion.weight</Data></Cell>
+   <Row ss:AutoFitHeight="0" ss:Height="29">
+    <Cell><Data ss:Type="String">Project.requestSubmission</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">integer</Data></Cell>
-    <Cell ss:Index="15"><Data ss:Type="String">Numeric value that represents the sample portion weight, measured in milligrams</Data></Cell>
-    <Cell><Data ss:Type="String">Numeric value that represents the sample portion weight, measured in milligrams.</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Indicates that the user has requested submission to the GDC for harmonization</Data></Cell>
+    <Cell><Data ss:Type="String">Indicates that the user has requested submission to the GDC for harmonization.</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="29"/>
-   <Row ss:AutoFitHeight="0" ss:Height="158"/>
-   <Row ss:AutoFitHeight="0" ss:Height="29"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Project.submissionEnabled</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String">Indicates if submission to a project is allowed</Data></Cell>
+    <Cell><Data ss:Type="String">Indicates if submission to a project is allowed.</Data></Cell>
+   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageSetup>
@@ -566,13 +587,14 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>6</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <LeftColumnRightPane>5</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    
    <ProtectObjects>False</ProtectObjects>
@@ -1045,6 +1067,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1247,6 +1270,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1630,6 +1654,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1753,6 +1778,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1937,6 +1963,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1961,9 +1988,9 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s114"><Data ss:Type="String">Example</Data></Cell>
     <Cell ss:StyleID="s98"/>
-    <Cell ss:StyleID="s115"><Data ss:Type="String">Placeholder example file for Portion resource</Data></Cell>
+    <Cell ss:StyleID="s115"><Data ss:Type="String">Placeholder example file for Project resource</Data></Cell>
     <Cell ss:StyleID="s98"><Data ss:Type="String">example</Data></Cell>
-    <Cell ss:StyleID="s98"><Data ss:Type="String">portion-example.xml</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">project-example.xml</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s116"><Data ss:Type="String">y</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2271,6 +2298,8 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -2447,6 +2476,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>

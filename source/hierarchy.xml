@@ -331,6 +331,10 @@ signatures.html
       <page type="resource" resource="Sample"/>
       <page type="resource" resource="Case"/>
       <page type="resource" resource="Portion"/>
+      <page type="resource" resource="Aliquot"/>
+      <page type="resource" resource="Analyte"/>
+      <page type="resource" resource="Project"/>
+      <page type="resource" resource="Program"/>      
     </page>
 
     <page title="Medications" filename="medications-module.html" icon="medication.png">
