@@ -37,38 +37,47 @@
             <display value="It is certain"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P2"/>
             <display value="It is decidedly so"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P3"/>
             <display value="Without a doubt"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P4"/>
             <display value="Yes - definitely"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P5"/>
             <display value="You may rely on it"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P6"/>
             <display value="As I see it, yes"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P7"/>
             <display value="Most Likely"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P8"/>
             <display value="Outlook good"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P9"/>
             <display value="Yes"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="P10"/>
             <display value="Signs point to yes"/>
          </contains>
@@ -79,22 +88,27 @@
          <code value="N"/>
          <display value="Negative response"/>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="N1"/>
             <display value="Don't count on it"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="N2"/>
             <display value="My reply is no"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="N3"/>
             <display value="My sources say no"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="N4"/>
             <display value="Outlook not so good"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="N5"/>
             <display value="Very doubtful"/>
          </contains>
@@ -105,22 +119,27 @@
          <code value="U"/>
          <display value="Uncertain response"/>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="U1"/>
             <display value="Reply hazy, try again"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="U2"/>
             <display value="Ask again later"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="U3"/>
             <display value="Better not tell you now"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="U4"/>
             <display value="Cannot predict now"/>
          </contains>
          <contains>
+            <system value="http://example.org/magic8ball"/>
             <code value="U5"/>
             <display value="Concentrate and ask again"/>
          </contains>
