@@ -453,7 +453,6 @@ public class Publisher implements URIResolver, SectionNumberer {
     pub.page = new PageProcessor(PageProcessor.DEF_TS_SERVER);
     pub.isGenerate = !(args.length > 1 && hasParam(args, "-nogen"));
     if (hasParam(args, "-noValidate")) {
-      // pub.noValidate = getNamedParam(args, "-noValidate");
       pub.doValidate = false;
       System.out.println("Skipping all validation");
     }
