@@ -424,6 +424,7 @@ public class Publisher implements URIResolver, SectionNumberer {
   private Map<String, Long> dates = new HashMap<String, Long>();
   private Map<String, Boolean> buildFlags = new HashMap<String, Boolean>();
   private IniFile cache;
+  //private String noValidate;
   private String singleResource;
   private String singlePage;
   private PublisherTestSuites tester;
@@ -451,7 +452,14 @@ public class Publisher implements URIResolver, SectionNumberer {
     Publisher pub = new Publisher();
     pub.page = new PageProcessor(PageProcessor.DEF_TS_SERVER);
     pub.isGenerate = !(args.length > 1 && hasParam(args, "-nogen"));
-    pub.doValidate = true;   
+    if (hasParam(args, "-noValidate")) {
+      // pub.noValidate = getNamedParam(args, "-noValidate");
+      pub.doValidate = false;
+      System.out.println("Skipping all validation");
+    }
+    else {
+      pub.doValidate = true;
+    }
     pub.noArchive = (args.length > 1 && hasParam(args, "-noarchive"));
     pub.web = (args.length > 1 && hasParam(args, "-web"));
     pub.page.setForPublication(pub.web);
@@ -552,7 +560,8 @@ public class Publisher implements URIResolver, SectionNumberer {
         for (String n : buildFlags.keySet())
           buildFlags.put(n, false);
         buildFlags.put("page-"+singlePage.toLowerCase(), true);
-      } else if (singleResource != null) {
+      }
+      else if (singleResource != null) {
         for (String n : buildFlags.keySet())
           buildFlags.put(n, false);
         buildFlags.put(singleResource.toLowerCase(), true);
