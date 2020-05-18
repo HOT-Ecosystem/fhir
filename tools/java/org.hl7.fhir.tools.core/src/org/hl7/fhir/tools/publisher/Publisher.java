@@ -439,6 +439,8 @@ public class Publisher implements URIResolver, SectionNumberer {
 
   private boolean doValidate;
 
+  private boolean validateExamples;
+
   private boolean isCIBuild;
 
   private boolean isPostPR;
@@ -465,6 +467,8 @@ public class Publisher implements URIResolver, SectionNumberer {
     pub.noSound =  (args.length > 1 && hasParam(args, "-nosound"));
     pub.noPartialBuild = (args.length > 1 && hasParam(args, "-nopartial"));
     pub.isPostPR = (args.length > 1 && hasParam(args, "-post-pr"));
+    if (hasParam(args, "-validateExamples"))
+      pub.validateExamples = true;
     if (hasParam(args, "-resource"))
       pub.singleResource = getNamedParam(args, "-resource");
     if (hasParam(args, "-page"))
@@ -5889,24 +5893,26 @@ public class Publisher implements URIResolver, SectionNumberer {
         }
       }
       if (buildFlags.get("all")) {
-        if (validateId == null || validateId.equals("v2-tables"))
-          ei.validate("v2-tables", "Bundle");
-        if (validateId == null || validateId.equals("v3-codesystems"))
-          ei.validate("v3-codesystems", "Bundle");
-        if (validateId == null || validateId.equals("valuesets"))
-          ei.validate("valuesets", "Bundle");
-        if (validateId == null || validateId.equals("conceptmaps"))
-          ei.validate("conceptmaps", "Bundle");
-        if (validateId == null || validateId.equals("profiles-types"))
-          ei.validate("profiles-types", "Bundle");
-        if (validateId == null || validateId.equals("profiles-resources"))
-          ei.validate("profiles-resources", "Bundle");
-        if (validateId == null || validateId.equals("profiles-others"))
-          ei.validate("profiles-others", "Bundle");
-        if (validateId == null || validateId.equals("search-parameters"))
-          ei.validate("search-parameters", "Bundle");
-        if (validateId == null || validateId.equals("extension-definitions"))
-          ei.validate("extension-definitions", "Bundle");
+        if (!validateExamples) {
+          if (validateId == null || validateId.equals("v2-tables"))
+            ei.validate("v2-tables", "Bundle");
+          if (validateId == null || validateId.equals("v3-codesystems"))
+            ei.validate("v3-codesystems", "Bundle");
+          if (validateId == null || validateId.equals("valuesets"))
+            ei.validate("valuesets", "Bundle");
+          if (validateId == null || validateId.equals("conceptmaps"))
+            ei.validate("conceptmaps", "Bundle");
+          if (validateId == null || validateId.equals("profiles-types"))
+            ei.validate("profiles-types", "Bundle");
+          if (validateId == null || validateId.equals("profiles-resources"))
+            ei.validate("profiles-resources", "Bundle");
+          if (validateId == null || validateId.equals("profiles-others"))
+            ei.validate("profiles-others", "Bundle");
+          if (validateId == null || validateId.equals("search-parameters"))
+            ei.validate("search-parameters", "Bundle");
+          if (validateId == null || validateId.equals("extension-definitions"))
+            ei.validate("extension-definitions", "Bundle");
+        }
       }
       ei.summarise();
 
