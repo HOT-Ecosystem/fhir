@@ -424,7 +424,6 @@ public class Publisher implements URIResolver, SectionNumberer {
   private Map<String, Long> dates = new HashMap<String, Long>();
   private Map<String, Boolean> buildFlags = new HashMap<String, Boolean>();
   private IniFile cache;
-  //private String noValidate;
   private String singleResource;
   private String singlePage;
   private PublisherTestSuites tester;
