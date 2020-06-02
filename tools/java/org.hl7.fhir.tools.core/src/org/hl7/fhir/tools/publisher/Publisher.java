@@ -467,8 +467,6 @@ public class Publisher implements URIResolver, SectionNumberer {
     pub.noSound =  (args.length > 1 && hasParam(args, "-nosound"));
     pub.noPartialBuild = (args.length > 1 && hasParam(args, "-nopartial"));
     pub.isPostPR = (args.length > 1 && hasParam(args, "-post-pr"));
-    if (hasParam(args, "-validateExamples"))
-      pub.validateExamples = true;
     if (hasParam(args, "-resource"))
       pub.singleResource = getNamedParam(args, "-resource");
     if (hasParam(args, "-page"))
@@ -479,6 +477,8 @@ public class Publisher implements URIResolver, SectionNumberer {
       pub.page.setBaseURL(getNamedParam(args, "-url"));
     if (hasParam(args, "-svn"))
       pub.page.setBuildId(getNamedParam(args, "-svn"));
+    if (hasParam(args, "-validateExamples"))
+      pub.validateExamples = true;
 //    if (hasParam("args", "-noref"))
 //      pub.setNoReferenceImplementations(getNamedParam(args, "-noref"));
 //    if (hasParam(args, "-langfolder"))
