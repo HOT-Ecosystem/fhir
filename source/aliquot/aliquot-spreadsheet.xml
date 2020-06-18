@@ -15,7 +15,7 @@
   
   
   <TabRatio>734</TabRatio>
-  <ActiveSheet>9</ActiveSheet>
+  <ActiveSheet>1</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -502,6 +502,13 @@
     <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
    </Borders>
   </Style>
+  <Style ss:ID="s133" ss:Parent="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+   </Borders>
+   <Interior/>
+  </Style>
   <Style ss:ID="s134">
    <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
    <Borders>
@@ -519,15 +526,6 @@
     <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="3"/>
    </Borders>
    <Interior/>
-  </Style>
-  <Style ss:ID="s137" ss:Parent="s63">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
-   <Borders>
-    <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
-   </Borders>
-  </Style>
-  <Style ss:ID="s138" ss:Parent="s63">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
@@ -598,7 +596,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="43">
     <Cell><Data ss:Type="String">Aliquot</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">DomainResource</Data></Cell>
-    <Cell ss:Index="10"><Data ss:Type="String">clinical.diagnostics</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">gdc.biospecimen</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">A PropertySet defiend by GDC to hold generic properties that apply to many different entities</Data></Cell>
     <Cell><Data ss:Type="String">Pertaining to a portion of the whole; any one of two or more samples of something, of the same volume or weight.</Data></Cell>
     <Cell ss:Index="25"><Data ss:Type="String">0;40</Data></Cell>
@@ -759,12 +757,13 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>14</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>13</LeftColumnRightPane>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    
    <ProtectObjects>False</ProtectObjects>
@@ -2673,9 +2672,9 @@
     <Cell ss:StyleID="s131"><Data ss:Type="String">placeholder</Data></Cell>
     <Cell ss:StyleID="s113"><Data ss:Type="Number">1</Data></Cell>
     <Cell ss:StyleID="s98"/>
-    <Cell ss:StyleID="s137"/>
-    <Cell ss:StyleID="s137"><Data ss:Type="String">Placeholder</Data></Cell>
-    <Cell ss:StyleID="s137"><Data ss:Type="String">tbd</Data></Cell>
+    <Cell ss:StyleID="s133"/>
+    <Cell ss:StyleID="s133"><Data ss:Type="String">Placeholder</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="String">tbd</Data></Cell>
     <Cell ss:StyleID="s113"/>
     <Cell ss:StyleID="s113"/>
     <Cell ss:StyleID="s134"/>
@@ -2683,9 +2682,9 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s123"/>
     <Cell ss:Index="3" ss:StyleID="s69"/>
-    <Cell ss:StyleID="s138"/>
-    <Cell ss:StyleID="s138"/>
-    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s135"/>
     <Cell ss:Index="9" ss:StyleID="s125"/>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3075,8 +3074,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   <Selected/>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -3105,9 +3102,9 @@
     <Cell ss:StyleID="s131"><Data ss:Type="String">placeholder</Data></Cell>
     <Cell ss:StyleID="s113"><Data ss:Type="Number">1</Data></Cell>
     <Cell ss:StyleID="s98"/>
-    <Cell ss:StyleID="s137"/>
-    <Cell ss:StyleID="s137"><Data ss:Type="String">Placeholder</Data></Cell>
-    <Cell ss:StyleID="s137"><Data ss:Type="String">tbd</Data></Cell>
+    <Cell ss:StyleID="s133"/>
+    <Cell ss:StyleID="s133"><Data ss:Type="String">Placeholder</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="String">tbd</Data></Cell>
     <Cell ss:StyleID="s113"/>
     <Cell ss:StyleID="s113"/>
     <Cell ss:StyleID="s134"/>
@@ -3115,9 +3112,9 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s123"/>
     <Cell ss:Index="3" ss:StyleID="s69"/>
-    <Cell ss:StyleID="s138"/>
-    <Cell ss:StyleID="s138"/>
-    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s135"/>
     <Cell ss:Index="9" ss:StyleID="s125"/>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3507,7 +3504,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>

@@ -444,7 +444,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -490,7 +489,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="43">
     <Cell><Data ss:Type="String">Project</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">DomainResource</Data></Cell>
-    <Cell ss:Index="10"><Data ss:Type="String">clinical.diagnostics</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">gdc.administrative</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Any specifically defined piece of work that is undertaken or attempted to meet a single requirement. (NCIt C47885)</Data></Cell>
     <Cell><Data ss:Type="String">Any specifically defined piece of work that is undertaken or attempted to meet a single requirement. (NCIt C47885)</Data></Cell>
    </Row>
@@ -508,14 +507,14 @@
     <Cell ss:Index="15" ss:StyleID="s80"><Data ss:Type="String">KEY</Data></Cell>
     <Cell ss:StyleID="s80"><Data ss:Type="String">KEY</Data></Cell>
    </Row>
-   <Row ss:Height="29">
+   <Row ss:AutoFitHeight="0" ss:Height="29">
     <Cell><Data ss:Type="String">Project.awgReview</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s81"><Data ss:Type="String">boolean</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Indicates that the project is an AWG project</Data></Cell>
     <Cell><Data ss:Type="String">Indicates that the project is an AWG project.</Data></Cell>
    </Row>
-   <Row ss:Height="29">
+   <Row ss:AutoFitHeight="0" ss:Height="29">
     <Cell><Data ss:Type="String">Project.dbgapAccessionNumber</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">1..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
@@ -530,21 +529,21 @@
     <Cell ss:Index="15"><Data ss:Type="String">Full name for the project</Data></Cell>
     <Cell><Data ss:Type="String">Full name for the project.</Data></Cell>
    </Row>
-   <Row ss:Height="43">
+   <Row ss:AutoFitHeight="0" ss:Height="43">
     <Cell><Data ss:Type="String">Project.inReview</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Indicates that the project is under review by the submitter. Upload and data modification is disabled</Data></Cell>
     <Cell><Data ss:Type="String">Indicates that the project is under review by the submitter. Upload and data modification is disabled. </Data></Cell>
    </Row>
-   <Row ss:Height="29">
+   <Row ss:AutoFitHeight="0" ss:Height="29">
     <Cell><Data ss:Type="String">Project.isLegacy</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Indicates whether a project will appear in the Legacy Archive</Data></Cell>
     <Cell><Data ss:Type="String">Indicates whether a project will appear in the Legacy Archive. </Data></Cell>
    </Row>
-   <Row ss:Height="14">
+   <Row ss:AutoFitHeight="0" ss:Height="14">
     <Cell><Data ss:Type="String">Project.name</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">1..1</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
@@ -552,14 +551,14 @@
     <Cell ss:Index="15"><Data ss:Type="String">Display name for the project</Data></Cell>
     <Cell><Data ss:Type="String">Display name for the project.</Data></Cell>
    </Row>
-   <Row ss:Height="14">
+   <Row ss:AutoFitHeight="0" ss:Height="14">
     <Cell><Data ss:Type="String">Project.primarySite</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">string</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Primary site for the project</Data></Cell>
     <Cell><Data ss:Type="String">Primary site for the project.</Data></Cell>
    </Row>
-   <Row ss:Height="43">
+   <Row ss:AutoFitHeight="0" ss:Height="43">
     <Cell><Data ss:Type="String">Project.releaseRequested</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s82"><Data ss:Type="String">boolean</Data></Cell>
@@ -587,12 +586,11 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>6</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
    <LeftColumnRightPane>5</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -1067,7 +1065,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1270,7 +1267,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1654,7 +1650,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1778,7 +1773,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -1963,7 +1957,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -2298,8 +2291,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -2476,7 +2467,6 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
-   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
