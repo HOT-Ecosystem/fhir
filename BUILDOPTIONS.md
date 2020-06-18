@@ -17,7 +17,7 @@ listed first.
 ant -Dargs "-resource resourceName"
 ```
 
-Where "resourceName" is the name of your resource.
+Where "resourceName" is the name of your resource.<br>
 Note: This option will skip all validation by default.
 
 #### To force a full build:
