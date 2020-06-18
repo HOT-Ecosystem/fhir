@@ -18,6 +18,13 @@ ant -Dargs "-resource resourceName"
 ```
 
 Where "resourceName" is the name of your resource.
+Note: This option will skip all validation by default.
+
+#### To force a full build:
+
+```bash
+ant -Dargs "-resource all"
+```
 
 ## To skip all resource validation:
 
