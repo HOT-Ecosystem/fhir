@@ -4,7 +4,7 @@
 <a name="scope"></a>
 <h2>Scope and Usage</h2>
 <p>
-Operation outcomes are sets of error, warning and information messages that provide detailed information about the outcome of an attempted system operation.  
+Operation outcomes are sets of error, warning and information messages that provide detailed information about the outcome of an attempted system operation.
 They are provided as a direct system response, or component of one, and provide information about the outcome of the operation.
 </p>
 
@@ -25,12 +25,12 @@ The OperationOutcome resource is used in the following circumstances:
 <a name="bnr"></a>
 <h2>Boundaries and Relationships</h2>
 <p>
-This resource is not used for reporting clinical or workflow issues associated with a proposed or ongoing action; 
-these would be handled using <a href="detectedissue.html">DetectedIssue</a> or other resources. OperationOutcome  
-is not designed to be persisted or referenced from other parts of the workflow. 
+This resource is not used for reporting clinical or workflow issues associated with a proposed or ongoing action;
+these would be handled using DetectedIssue or other resources. OperationOutcome
+is not designed to be persisted or referenced from other parts of the workflow.
 </p>
 <p>
-It is possible to have both <code>OperationOutcome</code> and <a href="detectedissue.html">DetectedIssue</a> together, where the OperationOutcome might 
+It is possible to have both <code>OperationOutcome</code> and DetectedIssue together, where the OperationOutcome might
 indicate that a requested action was rejected due to a clinical issue and the DetectedIssue provides the details of the issue.
 </p>
 

@@ -272,7 +272,6 @@ signatures.html
 
       <page type="resource" resource="EpisodeOfCare"/>
       <page type="resource" resource="Encounter"/>
-      <page type="resource" resource="Account"/>
       <page type="resource" resource="Flag"/>
 
       <page type="resource" resource="Device"/>
@@ -285,8 +284,6 @@ signatures.html
       <page type="resource" resource="CommunicationRequest"/>
       <page type="resource" resource="ResearchStudy"/>
       <page type="resource" resource="ResearchSubject"/>
-  	  <page type="resource" resource="ChargeItem"/>
-	  <page type="resource" resource="ChargeItemDefinition"/>
   	  <page type="resource" resource="ObservationDefinition"/>
   	  <page type="resource" resource="SpecimenDefinition"/>
   	  <page type="resource" resource="CatalogEntry"/>
@@ -306,7 +303,6 @@ signatures.html
       <page type="resource" resource="Procedure"/>
       <page type="resource" resource="FamilyMemberHistory"/>
 
-      <page type="resource" resource="CarePlan"/>
       <page type="resource" resource="Goal"/>
       <page type="resource" resource="CareTeam"/>
       <page type="resource" resource="ClinicalImpression"/>
@@ -334,7 +330,7 @@ signatures.html
       <page type="resource" resource="Aliquot"/>
       <page type="resource" resource="Analyte"/>
       <page type="resource" resource="Project"/>
-      <page type="resource" resource="Program"/>      
+      <page type="resource" resource="Program"/>
     </page>
 
     <page title="Medications" filename="medications-module.html" icon="medication.png">
@@ -407,7 +403,6 @@ signatures.html
     </page>
 
     <page title="Workflow" filename="workflow-module.html" icon="workflow.png">
-      <page type="resource" resource="Task"/>
 <!--      <page type="resource" resource="Definition"/>
       <page type="resource" resource="Request"/>
       <page type="resource" resource="Event"/> -->
@@ -429,7 +424,6 @@ signatures.html
       <page type="resource" resource="ServiceRequest"/>
       <page type="resource" resource="NutritionOrder"/>
       <page type="resource" resource="NutritionIntake"/>
-      <page type="resource" resource="VisionPrescription"/>
       <page type="resource" resource="ActivityDefinition"/>
       <page type="resource" resource="PlanDefinition"/>
       <page type="resource" resource="DeviceRequest"/>
@@ -441,16 +435,6 @@ signatures.html
     </page>
 
     <page title="Financial" filename="financial-module.html" icon="financial.png">
-      <page type="resource" resource="Coverage"/>
-      <page type="resource" resource="CoverageEligibilityRequest"/>
-      <page type="resource" resource="CoverageEligibilityResponse"/>
-      <page type="resource" resource="EnrollmentRequest"/>
-      <page type="resource" resource="EnrollmentResponse"/>
-      <page type="resource" resource="Claim"/>
-      <page type="resource" resource="ClaimResponse"/>
-      <page type="resource" resource="PaymentNotice"/>
-      <page type="resource" resource="PaymentReconciliation"/>
-      <page type="resource" resource="ExplanationOfBenefit"/>
       <page type="resource" resource="Contract"/>
     </page>
 
@@ -483,6 +467,22 @@ signatures.html
       <page type="resource" resource="RequestGroup"/>
       <page type="resource" resource="Measure"/>
       <page type="resource" resource="MeasureReport"/>
+    </page>
+
+    <page title="Biospecimen" filename="biospecimen-module.html">
+      <page type="resource" resource="Aliquot"/>
+      <page type="resource" resource="Analyte"/>
+      <page type="resource" resource="Portion"/>
+      <page type="resource" resource="Sample"/>
+    </page>
+
+    <page title="Adminstrative" filename="administrative-module.html">
+      <page type="resource" resource="Program"/>
+      <page type="resource" resource="Project"/>
+    </page>
+
+    <page title="Case" filename="case-module.html">
+      <page type="resource" resource="Case"/>
     </page>
   </page>
 

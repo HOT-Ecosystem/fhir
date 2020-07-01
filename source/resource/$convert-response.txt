@@ -4,4 +4,4 @@ HTTP/1.1 200 OK
 Content-Type: application/fhir+json
 [other headers]
 
-$includexj ../patient/patient-example.xml
+// $includexj ../patient/patient-example.xml

@@ -5,7 +5,7 @@ Accept: application/fhir+json
 Content-Type: application/fhir+xml
 [other headers]
 
-$include ../patient/patient-example.xml
+// $include ../patient/patient-example.xml
 
 -------------------------------------------------
 // convert to a different version of FHIR (in this case, from 3 to 4

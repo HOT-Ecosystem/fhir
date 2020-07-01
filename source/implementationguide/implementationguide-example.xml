@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<ImplementationGuide xmlns="http://hl7.org/fhir"> 
+<ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="example"/>
   <url value="http://hl7.org/fhir/us/daf"/>
   <version value="0"/>
@@ -34,7 +34,7 @@
   <packageId value="hl7.fhir.us.daf"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.2.0"/>
-  <dependsOn> 
+  <dependsOn>
     <uri value="http://hl7.org/fhir/ImplementationGuide/uscore"/>
   </dependsOn>
   <global>
@@ -46,7 +46,7 @@
     <grouping>
       <name value="test"/>
       <description value="Base package (not broken up into multiple packages)"/>
-    </grouping>  
+    </grouping>
     <resource>
       <reference>
         <reference value="Patient/test"/>
@@ -55,26 +55,16 @@
       <description value="A test example to show how an implementation guide works"/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/patient"/>
     </resource>
-    <page>
-      <nameUrl value="patient-example.html"/>
-      <title value="Example Patient Page"/>
-      <generation value="html"/>
-      <page>
-        <nameUrl value="list.html"/>
-        <title value="Value Set Page"/>
-        <generation value="html"/>
-      </page>
-    </page>
     <parameter>
       <code value="apply"/>
       <value value="version"/>
-    </parameter>    
+    </parameter>
   </definition>
   <manifest>
     <rendering value="http://hl7.org/fhir/us/daf"/>
     <resource>
       <reference>
-        <reference value="Patient/test"/> 
+        <reference value="Patient/test"/>
       </reference>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/patient"/>
       <relativePath value="patient-test.html#patient-test"/>

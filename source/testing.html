@@ -205,9 +205,6 @@ instance. Note: This is a security label because different access control rules 
 <p>First, define the <a href="testscript-definitions.html#TestScript.fixture">fixture</a> as a <a href="references.html">reference</a> at the top of the test script. The fixture will hold the body of the POST request:</p>
 <div class="xmlCode"><xmp>
 <fixture id="example-patient">
-  <resource>
-    <reference value="Patient/patient-example.xml"/>
-  </resource>
 </fixture>
 </xmp></div>
 <p>Note that it is illegal for the fixture to contain a resource id in a create operation.</p>
@@ -1320,6 +1317,3 @@ and TestScript.teardown.action.operation elements. The operation elements should
 [%file newfooter%]
 </body>
 </html>
-
-
-

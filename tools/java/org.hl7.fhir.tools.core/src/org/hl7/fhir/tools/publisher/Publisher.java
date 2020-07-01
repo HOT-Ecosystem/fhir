@@ -425,6 +425,7 @@ public class Publisher implements URIResolver, SectionNumberer {
   private Map<String, Boolean> buildFlags = new HashMap<String, Boolean>();
   private IniFile cache;
   private String singleResource;
+  private String multipleResources;
   private String singlePage;
   private PublisherTestSuites tester;
   private List<FHIRPathUsage> fpUsages = new ArrayList<FHIRPathUsage>();
@@ -446,6 +447,8 @@ public class Publisher implements URIResolver, SectionNumberer {
   private boolean isPostPR;
 
   private String validateId;
+
+  private boolean partialBuild;
 
   public static void main(String[] args) throws Exception {
     //
@@ -469,6 +472,8 @@ public class Publisher implements URIResolver, SectionNumberer {
     pub.isPostPR = (args.length > 1 && hasParam(args, "-post-pr"));
     if (hasParam(args, "-resource"))
       pub.singleResource = getNamedParam(args, "-resource");
+    if (hasParam(args, "-resources"))
+      pub.multipleResources = getNamedParam(args, "-resources");
     if (hasParam(args, "-page"))
       pub.singlePage = getNamedParam(args, "-page");
     if (hasParam(args, "-name"))
@@ -479,6 +484,8 @@ public class Publisher implements URIResolver, SectionNumberer {
       pub.page.setBuildId(getNamedParam(args, "-svn"));
     if (hasParam(args, "-validateExamples"))
       pub.validateExamples = true;
+    if (hasParam(args, "- partial"))
+      pub.partialBuild = true;
 //    if (hasParam("args", "-noref"))
 //      pub.setNoReferenceImplementations(getNamedParam(args, "-noref"));
 //    if (hasParam(args, "-langfolder"))
@@ -568,7 +575,12 @@ public class Publisher implements URIResolver, SectionNumberer {
           buildFlags.put(n, false);
         buildFlags.put(singleResource.toLowerCase(), true);
       }
-      if (!buildFlags.get("all")) {
+      else if (multipleResources != null) {
+        for (String n : buildFlags.keySet())
+          buildFlags.put(n, false);
+        buildFlags.put(multipleResources.toLowerCase(), true);
+      }
+      if (!buildFlags.get("all") || partialBuild) {
         if (!noSound) {
           AudioUtilities.tone(1000, 10);
           AudioUtilities.tone(1400, 10);

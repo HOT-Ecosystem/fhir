@@ -1,1 +1,0 @@
-Boundaries between nutrition and meds and substances should be clearly stated, if possible OR usage must be fluid so that implementers do not have to redesign when handling border cases. 

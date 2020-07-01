@@ -2,7 +2,7 @@
 POST /open/Patient/$validate?profile=http://hl7.org/fhir/StructureDefinition/daf-patient
 [other headers]
 
-$include ../patient/patient-example-us-extensions.xml
+// $include ../patient/patient-example-us-extensions.xml
 
 --------------------------------------
 // validate a proposed patient update - and for this example, using the Parameters syntax
@@ -18,7 +18,7 @@ POST /open/Patient/example/$validate
   <parameter>
     <name value="resource"/>
     <resource>
-$include 6 ../patient/patient-example.xml
+// $include 6 ../patient/patient-example.xml
     </resource>
   </parameter>
 </Parameters>
